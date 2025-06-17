@@ -1,3 +1,5 @@
 <h1>Bienvenido al sistema</h1>
-<p><a href="{% url 'logout' %}">Cerrar sesión</a></p>
-
+<form action="{% url 'logout' %}" method="post" style="display:inline;">
+    {% csrf_token %}
+    <button type="submit">Cerrar sesión</button>
+</form>
