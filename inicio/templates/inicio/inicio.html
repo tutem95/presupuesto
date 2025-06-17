@@ -1,4 +1,7 @@
 <h1>Bienvenido al sistema</h1>
+
+
+
 <form action="{% url 'logout' %}" method="post" style="display:inline;">
     {% csrf_token %}
     <button type="submit">Cerrar sesión</button>
